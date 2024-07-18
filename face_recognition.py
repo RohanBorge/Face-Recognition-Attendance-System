@@ -23,6 +23,20 @@ class Face_Recognition:
         # Initialize GUI elements and image placeholders
         self.initialize_gui()
 
+db_host = os.getenv('DB_HOST', 'localhost')
+db_user = os.getenv('DB_USER', 'root')
+db_password = os.getenv('DB_PASSWORD', 'Rohan@123')
+db_name = os.getenv('DB_NAME', 'face_recognization')
+
+# Establishing the connection using environment variables
+conn = mysql.connector.connect(
+    host=db_host,
+    user=db_user,
+    password=db_password,
+    database=db_name
+)
+cursor = conn.cursor()
+
     def initialize_gui(self):
         title_lb1 = tk.Label(self.root, text="FACE RECOGNITION", font=("times new roman", 35, "bold"), bg="white", fg="red")
         title_lb1.place(x=0, y=0, width=1550, height=57)
