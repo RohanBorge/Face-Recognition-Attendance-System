@@ -51,8 +51,7 @@ cursor = conn.cursor()
 # Your face recognition code logic
 
 # At the end, close the cursor and connection
-cursor.close()
-conn.close()
+
 
 
          #==========variables=============
@@ -585,7 +584,8 @@ class Face_Recoznization_System:
         self.app=Help(self.new_window) 
 
 
-
+cursor.close()
+conn.close()
 
 if __name__=="__main__":
     main()
