@@ -36,7 +36,7 @@ class Login_Window:
 # Fetching database credentials from environment variables
 db_host = os.getenv('DB_HOST', 'localhost')
 db_user = os.getenv('DB_USER', 'root')
-db_password = os.getenv('DB_PASSWORD', 'Rohan@1234')
+db_password = os.getenv('DB_PASSWORD', 'Rohan@123')
 db_name = os.getenv('DB_NAME', 'face_recognization')
 
 # Establishing the connection using environment variables
