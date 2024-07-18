@@ -8,8 +8,9 @@ MarkupSafe==2.1.5
 mysql-connector-python==8.0.28
 opencv-python==4.9.0.80
 
-numpy==2.0.0
+numpy==1.21.6
 opencv-python==4.5.5.64
+
 pillow==10.4.0
 protobuf==5.27.2
 Werkzeug==3.0.3
